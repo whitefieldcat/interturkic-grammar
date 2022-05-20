@@ -1,0 +1,92 @@
+\documentclass[12pt]{book}
+
+% metadata
+\title{Interturkic Grammar}
+\author{}
+\date{\today}
+
+% typography
+\usepackage[skip=6pt]{caption}
+\usepackage{float}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Cambria}
+\newfontfamily{\arabicfont}[Script=Arabic, Scale=1.1]{Calibri}
+\usepackage[letterpaper, top=1.5in, bottom=1.5in, left=1.5in, right=1.25in]{geometry}
+
+% tables
+\usepackage{longtable}
+\usepackage{multirow}
+
+% linguistics
+\usepackage{leipzig}
+\makeglossaries
+\usepackage{gb4e}
+\noautomath % must be called immediately after loading gb4e
+
+\usepackage{bidi} % must be loaded last
+
+% general settings
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{3.25pt}
+\renewcommand{\arraystretch}{1.2}
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% embedding of Interturkic text within English
+\newcommand{\latscript}[1]{\textit{#1}}
+\newcommand{\arabscript}[1]{{\arabicfont \RLE{#1}}}
+
+% punctuation
+\newcommand{\apostrophe}{\textquotesingle}
+\newcommand{\zeromorpheme}{\(\emptyset\)}
+\newcommand{\derivedfrom}{\(\leftarrow\)}
+\newcommand{\becomes}{\(\rightarrow\)}
+
+% tables meant to be smaller than a single page
+% #1 (optional) = label
+% #2 = caption
+% #3 = column specification
+\newenvironment{smalltable}[3][]
+	{
+		\begin{table}[H]
+			\centering
+			\caption{#2}
+			#1
+			\begin{tabular}{|#3|}
+	}
+	{
+		 	\end{tabular}
+		\end{table}
+	}
+
+% tables that may span multiple pages
+% #1 (optional) = label
+% #2 = caption
+% #3 = column specification
+% #4 = header
+\newenvironment{bigtable}[4][]
+	{
+		\begin{longtable}[c]{|#3|}
+			\caption{#2} #1 \\
+			\hline
+			#4
+			\endfirsthead
+			\hline
+	}
+	{
+			\hline
+		\end{longtable}
+	}
+
+\begin{document}
+	\maketitle
+
+	\frontmatter
+	\setlength{\parskip}{0pt} % minimise spacing between ToC and LoT entries
+	\tableofcontents
+	\listoftables
+	\printglosses[style=block]
+
+	\mainmatter
+	\setlength{\parskip}{6pt} % set paragraph spacing for the rest of the document
+\end{document}
