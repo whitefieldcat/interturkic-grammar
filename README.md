@@ -9,7 +9,7 @@ This is a description of the grammar of Interturkic, a Turkic-based constructed 
 ## Compilation instructions
 
 ```
-xelatex interturkic-grammar.tex
-makeglossaries interturkic-grammar.tex
-xelatex interturkic-grammar.tex
+xelatex main.tex
+makeglossaries main.tex
+xelatex main.tex
 ```
