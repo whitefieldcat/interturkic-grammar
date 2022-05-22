@@ -10,6 +10,6 @@ This is a description of the grammar of Interturkic, a Turkic-based constructed 
 
 ```
 xelatex main.tex
-makeglossaries main.tex
+makeglossaries main
 xelatex main.tex
 ```
