@@ -23,7 +23,7 @@
 \section{Inflection}
 
 Nouns are inflected for number, possession and case.
-When multiple such suffixes co-occur, they are added in the order: number-possession-case.
+When multiple such suffixes co-occur, they are added in the order of number, possession, then case.
 
 \begin{lingexample}
 	\ex \gll üy-ler-imiz-den \\
@@ -69,7 +69,7 @@ The third person is the exception, which does not distinguish between a singular
 	\textbf{\Pl{}} & \latscript{-(I)mIz} & \latscript{-(I)ñIz} & \\
 \end{smalltable}
 
-If present, the possessor would be inflected in the genitive case.
+If present, the possessor would be declined in the genitive case.
 
 \begin{lingexample}
 	\ex \gll seniñ ayağ-ıñ \\
@@ -78,7 +78,7 @@ If present, the possessor would be inflected in the genitive case.
 \end{lingexample}
 
 Because they act as determiners, the possessive suffixes confer definiteness onto the nominals to which they are attached.
-Consequently, if said nominal is used as a direct object, it must be inflected in the accusative case.
+Consequently, if said nominal is used as a direct object, it must be declined in the accusative case.
 
 \begin{lingexample}
 	\ex \gll Öz qalqan-ı-n tut-ma-dı. \\
@@ -88,15 +88,79 @@ Consequently, if said nominal is used as a direct object, it must be inflected i
 
 \subsection{Case}
 
-\begin{smalltable}{Case suffixes}{c|c|c|c|c|c|c|c}
+There are six cases in Interturkic, whose suffixes are given in table~\ref{tab:case-suffixes}.
+The accusative\apostrophe{}s vowel is optionally dropped after the third-person possessive suffix.
+The dative, locative, and ablative also have different forms when placed after a possessive suffix.
+
+\begin{smalltable}[\label{tab:case-suffixes}]{Case suffixes}{c|c|c|c|c|c|c|c}
 	\multicolumn{2}{|c|}{} & \textbf{\Nom{}} & \textbf{\Acc{}} & \textbf{\Gen{}} & \textbf{\Dat{}} & \textbf{\Loc{}} & \textbf{\Abl{}} \\
 	\hline
-	\multicolumn{2}{|c|}{\textbf{Normal}} & \multirow{3}{*}{\latscript{-\zeromorpheme{}}} & \multirow{2}{*}{\latscript{-nI}} & \multirow{3}{*}{\latscript{-nIñ}} & \latscript{-GA} & \latscript{-DA} & \latscript{-DAn} \\
+	\multicolumn{2}{|c|}{\textbf{Normal}} & \multirow{3}{*}{\latscript{-\zero{}}} & \multirow{2}{*}{\latscript{-nI}} & \multirow{3}{*}{\latscript{-nIñ}} & \latscript{-GA} & \latscript{-DA} & \latscript{-DAn} \\
 	\cline{1-2} \cline{6-8}
 	\multirow{2}{*}{\textbf{Possessive}} & \textbf{\First{}/\Second{}} & & & & \multirow{2}{*}{\latscript{-(n)A}} & \multirow{2}{*}{\latscript{-(n)dA}} & \multirow{2}{*}{\latscript{-(n)dAn}} \\
 	\cline{2-2} \cline{4-4}
 	& \textbf{\Third{}} & & \latscript{-n[I]} & & & & \\
 \end{smalltable}
+
+The nominative case marks the subject or predicative complement of a sentence (see example~\ref{ex:nom-subject-predicative}), as well as indefinite direct objects (see example~\ref{ex:nom-indef-direct-obj}).
+Otherwise, the accusative case must be used.
+
+\begin{lingexample}
+	\ex \label{ex:nom-subject-predicative} \gll Ol yaqşı yoldaş. \\
+		\Tsg{} good friend-\Sg{} \\
+		\glt `He\apostrophe{}s a good friend.'
+	\ex \label{ex:nom-indef-direct-obj} \gll Men taw-lar kör-dü-m. \\
+		\Fsg{} mountain-\Pl{} see-\Pst{}.\Def{}-\Fsg{} \\
+		\glt `I saw mountains.'
+\end{lingexample}
+
+The accusative case marks direct objects if and onlt if they are considered definite (compare examples-\ref{ex:acc-def-direct-obj} and \ref{ex:no-acc-indef-dir-obj}).
+
+\begin{lingexample}
+	\ex \label{ex:acc-def-direct-obj} \gll Sen at-nı kör-dü-ñ mü? \\
+		\Ssg{} horse-\Acc{} see-\Pst{}.\Def{}-\Ssg{} \Q{} \\
+		\glt `Did you see \emph{the} horse?'
+	\ex \label{ex:no-acc-indef-dir-obj} \gll Sen at kör-dü-ñ mü? \\
+		\Ssg{} horse see-\Pst{}.\Def{}-\Ssg{} \Q{} \\
+		\glt `Did you see \emph{a} horse?'
+\end{lingexample}
+
+The genitive case expresses a possessive or qualifying relationship of the marked nominal over another.
+The corresponding possessive suffix is then suffixed onto the qualified nominal.
+
+\begin{lingexample}
+	\ex \gll Olar-nıñ üy-ler-i aq. \\
+		\Tpl{}-\Gen{} house-\Pl{}-\Poss{}.\Third{} white \\
+		\glt `Their houses are white.'
+\end{lingexample}
+
+The dative case marks indirect objects (see example~\ref{ex:dat-indirect-object}), the complements of some verbs (see example~\ref{ex:dat-verb-complement}), and the point towards which an action is directed (see example~\ref{ex:dat-destination}).
+
+\begin{lingexample}
+	\ex \label{ex:dat-indirect-object} \gll Arslan maña üç balıq ber-di. \\
+		Arslan \Fsg{}.\Dat{} three fish give-\Pst{}.\Def{} \\
+		\glt `Arslan gave me three fish.'
+	\ex \label{ex:dat-verb-complement} \gll Siz ol xanlıq-qa kömek ber-me-yecek-siz mi? \\
+		\Spl{} \Dist{} khanate-\Dat{} help give-\Neg{}-\Fut{}.\Def{}-\Spl{} \Q{} \\
+		\glt `Aren\apostrophe{}t you going to help that khanate?'
+	\ex \label{ex:dat-destination} \gll Biz Azärbaycan-ğa bar-dı-q. \\
+		\Fpl{} Azerbaijan-\Dat{} go-\Pst{}.\Def{}-\Fpl{} \\
+		\glt `We went to Azerbaijan.'
+\end{lingexample}
+
+The locative case expresses location at a physical location (see example~\ref{ex:loc-location}), within an abstract concept (see example~\ref{ex:loc-abstract}), or at a point in time (see example~\ref{ex:loc-time}).
+
+\begin{lingexample}
+	\ex \label{ex:loc-location} \gll Üy-ümüz-de tuz yoq. \\
+		house-\Poss{}.\Fpl{}-\Loc{} salt absent \\
+		\glt `There\apostrophe{}s no salt in my house.'
+	\ex \label{ex:loc-abstract} \gll Eşğal-da-mız mı? \\
+		occupation-\Loc{}-\Cop{}.\Prs{}.\Fpl{} \Q{} \\
+		\glt `Are we under occupation?'
+	\ex \label{ex:loc-time} \gll Taw-dan sä\apostrophe{}at altı-da çıq-tı-lar. \\
+		mountain-\Abl{} hour six-\Loc{} go\_out-\Pst{}.\Def{}-\Tpl{} \\
+		\glt `They left the mountain at six o\apostrophe{}clock'
+\end{lingexample}
 
 \chapter{Adjectives}
 
@@ -144,6 +208,58 @@ Otherwise, adjectives formed from \latscript{-GI} can be used attributively.
 
 \section{Personal pronouns}
 
+\begin{smalltable}{Declension of personal pronouns}{c|c|c|c|c}
+	& \textbf{\Fsg{}} & \textbf{\Ssg{}} & \textbf{\Fpl{}} & \textbf{\Spl{}} \\
+	\hline
+	\textbf{\Nom{}} & \latscript{men} & \latscript{sen} & \latscript{biz} & \latscript{siz} \\
+	\hline
+	\textbf{\Acc{}} & \latscript{meni} & \latscript{seni} & \latscript{bizni} & \latscript{sizni} \\
+	\hline
+	\textbf{\Gen{}} & 	\latscript{meniñ} & \latscript{seniñ} & \latscript{bizniñ} & \latscript{sizniñ} \\
+	\hline
+	\textbf{\Dat{}} & \latscript{maña} & \latscript{saña} & \latscript{bizge} & \latscript{sizge} \\
+	\hline
+	\textbf{\Loc{}} & \latscript{mende} & \latscript{sende} & \latscript{bizde} & \latscript{sizde} \\
+	\hline
+	\textbf{\Abl{}} & \latscript{menden} & \latscript{senden} & \latscript{bizden} & \latscript{sizden} \\
+\end{smalltable}
+
+\section{Reflexive pronouns}
+
+\begin{smalltable}{Declension of reflexive pronouns}{c|c|c|c|c|c|c}
+	& \textbf{\Fsg{}} & \textbf{\Ssg{}} & \textbf{\Tsg{}} & \textbf{\Fpl{}} & \textbf{\Spl{}} & \textbf{\Tpl{}} \\
+	\hline
+	\textbf{\Nom{}} & \latscript{özüm} & \latscript{özüñ} & \latscript{özü} & \latscript{özümüz} & \latscript{özüñüz} & \latscript{özleri} \\
+	\hline
+	\textbf{\Acc{}} & \latscript{özümü} & \latscript{özüñü} & \latscript{özün[ü]} & \latscript{özümüznü} & \latscript{özüñüznü} & \latscript{özlerin[i]} \\
+	\hline
+	\textbf{\Gen{}} & \latscript{özümüñ} & \latscript{özüñüñ} & \latscript{özünüñ} & \latscript{özümüznüñ} & \latscript{özüñüznüñ} & \latscript{özleriniñ} \\
+	\hline
+	\textbf{\Dat{}} & \latscript{özüme} & \latscript{özüñe} & \latscript{özüne} & \latscript{özümüze} & \latscript{özüñüze} & \latscript{özlerine} \\
+	\hline
+	\textbf{\Loc{}} & \latscript{özümde} & \latscript{özüñde} & \latscript{özünde} & \latscript{özümüzde} & \latscript{özüñüzde} & \latscript{özlerinde} \\
+	\hline
+	\textbf{\Abl{}} & \latscript{özümden} & \latscript{özüñden} & \latscript{özünden} & \latscript{özümüzden} & \latscript{özüñüzden} & \latscript{özlerinden} \\
+\end{smalltable}
+
+\section{Demonstrative pronouns}
+
+\begin{smalltable}{Declension of demonstrative pronouns}{c|c|c|c|c|c|c}
+	& \textbf{\Prox{}.\Sg{}} & \textbf{\Med{}.\Sg{}} & \textbf{\Dist{}.\Sg{}} & \textbf{\Prox{}.\Pl{}} & \textbf{\Med{}.\Pl{}} & \textbf{\Dist{}.\Pl{}} \\
+	\hline
+	\textbf{\Nom{}} & \latscript{bu} & \latscript{şu} & \latscript{ol} & \latscript{bular} & \latscript{şular} & \latscript{olar} \\
+	\hline
+	\textbf{\Acc{}} & \latscript{bunu} & \latscript{şunu} & \latscript{onu} & \latscript{bularnı} & \latscript{şularnı} & \latscript{olarnı} \\
+	\hline
+	\textbf{\Gen{}} & \latscript{bunuñ} & \latscript{şunuñ} & \latscript{onuñ} & \latscript{bularnıñ} & \latscript{şularnıñ} & \latscript{olarnıñ} \\
+	\hline
+	\textbf{\Dat{}} & \latscript{buña} & \latscript{şuña} & \latscript{oña} & \latscript{bularğa} & \latscript{şularğa} & \latscript{olarğa} \\
+	\hline
+	\textbf{\Loc{}} & \latscript{bunda} & \latscript{şunda} & \latscript{onda} & \latscript{bularda} & \latscript{şularda} & \latscript{olarda} \\
+	\hline
+	\textbf{\Abl{}} & \latscript{bundan} & \latscript{şundan} & \latscript{ondan} & \latscript{bulardan} & \latscript{şulardan} & \latscript{olardan} \\
+\end{smalltable}
+
 \chapter{Postpositions}
 
 \chapter{Verbs}
@@ -158,10 +274,10 @@ This is also the verb\apostrophe{}s basic stem.
 Negative stems express the non-performance of an action and are formed by suffixing \latscript{-mA} to the positive stem (see example~\ref{ex:negative-stem-formation}).
 
 \begin{lingexample}
-	\ex \label{ex:positive-stem-formation} \latscript{kör-} `see' \derivedfrom{} \latscript{körmek} `to see' \\
-		\latscript{yaz-} `write' \derivedfrom{} \latscript{yazmaq} `to write'
-	\ex \label{ex:negative-stem-formation} \latscript{alma-} `not take' \derivedfrom{} \latscript{al-} `take' \\
-		\latscript{berme-} `not give' \derivedfrom{} \latscript{ber-} `give'
+	\ex \label{ex:positive-stem-formation} \latscript{kör-} `see' \derivedfrom{} \latscript{kör-mek} `to see' \\
+		\latscript{yaz-} `write' \derivedfrom{} \latscript{yaz-maq} `to write'
+	\ex \label{ex:negative-stem-formation} \latscript{al-ma-} `not take' \derivedfrom{} \latscript{al-} `take' \\
+		\latscript{ber-me-} `not give' \derivedfrom{} \latscript{ber-} `give'
 \end{lingexample}
 
 \section{Non-finite forms}
@@ -175,7 +291,7 @@ Negative stems express the non-performance of an action and are formed by suffix
 	\cline{2-7}
 	& \textbf{\First{}} & \textbf{\Second{}} & \textbf{\Third{}} & \textbf{\First{}} & \textbf{\Second{}} & \textbf{\Third{}} \\
 	\hline
-	\textbf{Pronominal} & \latscript{-mAn} & \latscript{-sAn} & \multirow{2}{*}{\latscript{-\zeromorpheme{}}} & \latscript{-mIz} & \latscript{-sIz} & \multirow{2}{*}{\latscript{[-lAr]}} \\
+	\textbf{Pronominal} & \latscript{-mAn} & \latscript{-sAn} & \multirow{2}{*}{\latscript{-\zero{}}} & \latscript{-mIz} & \latscript{-sIz} & \multirow{2}{*}{\latscript{[-lAr]}} \\
 	\cline{1-3} \cline{5-6}
 	\textbf{Possessive} & \latscript{-m} & \latscript{-ñ} & & \latscript{-K} & \latscript{-ñIz} & \\
 \end{smalltable}
