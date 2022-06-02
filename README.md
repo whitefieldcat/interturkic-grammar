@@ -1,4 +1,4 @@
-# Interturkic langauge
+# Interturkic language
 
 This is a description of the grammar of Interturkic, a Turkic-based constructed language.
 
