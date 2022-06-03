@@ -86,7 +86,14 @@ The forms of each letter, along with their names and sound values, are shown bel
 
 \section{Arabic}
 
+The Arabic orthography is written from right to left.
+Unlike the Latin orthography, vowels are generally not fully represented in normal writing.
+A system of two-function letters and optional diacritics serves to disambiguate writing when deemed necessary.
+
 \subsection{Main letters}
+
+There are 34 main letters in the Arabic orthography, with each letter having up to four forms.
+The choice of which form to use is dependent on the letter\apostrophe{}s position within the word and (if present) the preceding letter.
 
 \begin{bigtable}{Main Arabic letters}{c|c|c|c|c|c}
 	{
@@ -163,12 +170,77 @@ The forms of each letter, along with their names and sound values, are shown bel
 	\arabscript{یە} \latscript{ye} & /j, ɯ, i/ & \arabscript{ـی} & \arabscript{ـیـ} & \arabscript{یـ} & \arabscript{ی} \\
 \end{bigtable}
 
-The letters \latscript{se}, \latscript{he}, \latscript{zal}, \latscript{sad}, \latscript{zad}, \latscript{ta}, and \latscript{za} are found only in Arabic loans, and do not represent any separate phonemes.
+\latscript{Älef}, \latscript{dal}, \latscript{zal}, \latscript{re}, \latscript{ze}, \latscript{je}, \latscript{waw}, and \latscript{vav} do not have separate medial forms.
+Thus, any letter following them within the same word would have to be written in its isolated or initial form.
+
+Word-initially, \latscript{älef} and \latscript{äyn} are silent.
+\latscript{Ha} has only two forms (\arabscript{ـە} and \arabscript{ە}) when used to represent vowels.
+\latscript{Se}, \latscript{he}, \latscript{zal}, \latscript{sad}, \latscript{zad}, \latscript{ta}, and \latscript{za} are found only in Arabic loans, and do not represent any additional phonemes.
 
 \subsection{Variant letters}
 
+The following graphemes are not considered separate letters, but rather, different contexual forms and ligatures of multiple letters.
+
+\begin{smalltable}{Letter-like graphemes}{c|c|c|c|c|c}
+	\multirow{2}{*}{\textbf{Name}} & \multirow{2}{*}{\textbf{Sound}} & \multicolumn{4}{c|}{\textbf{Form}} \\
+	\cline{3-6}
+	& & \textbf{final} & \textbf{medial} & \textbf{initial} & \textbf{isolated} \\
+	\hline
+	\arabscript{مدەلی الف} \latscript{mäddäli älef} & /ɑ, ʔɑ/ & \multicolumn{2}{|c}{\arabscript{ـآ}} & \multicolumn{2}{|c|}{\arabscript{آ}} \\
+	\hline
+	\arabscript{لام-الف} \latscript{lam-älef} & /lɑ/ & \multicolumn{2}{|c}{\arabscript{ـلا}} & \multicolumn{2}{|c|}{\arabscript{لا}} \\
+	\hline
+	\arabscript{همزەلی واو} \latscript{hämzäli waw} & \multirow{2}{*}{/ʔ/} & \multicolumn{2}{|c}{\arabscript{ـؤ}} & \multicolumn{2}{|c|}{\arabscript{ؤ}} \\
+	\cline{1-1} \cline{3-6}
+	\arabscript{همزەلی یە} \latscript{hämzäli ye} & & \arabscript{ـئ} & \arabscript{ـئـ} & \arabscript{ئـ} & \arabscript{ئ} \\
+\end{smalltable}
+
+In word-initial position, \latscript{mäddäli älef} simply represents /ɑ/.
+Anywhere else in a word, it represents /ʔɑ/.
+The latter usage, \latscript{hämzäli waw}, and \latscript{hämzäli ye}, are present only in Arabic loans.
+
 \subsection{Representation of vowels}
 
+\latscript{Zebär} \arabscript{زبر} is a line written above a letter, representing /æ/ (see example~\ref{ex:zebar}).
+\latscript{Zir} \arabscript{زیر} is a line written below a letter, representing /ɛ/ (see example~\ref{ex:zir}).
+\latscript{Piş} \arabscript{پیش} is a curl-shaped mark written above a letter, representing /ɔ/ (see example~\ref{ex:pish}).
+\latscript{Töbe} \arabscript{تبە} is an inverted V-shaped mark written above a letter, representing /œ/ (see example~\ref{ex:tobe}).
+
+\begin{lingexample}
+	\ex \label{ex:zebar} \arabscript{وَطَن} \latscript{wätän} `homeland' \\
+		\arabscript{اَذان} \latscript{äzan} `call to prayer'
+	\ex \label{ex:zir} \arabscript{بِش} \latscript{beş} `five' \\
+		\arabscript{کزِل} \latscript{közel} `beautiful'
+	\ex \label{ex:pish} \arabscript{اُرمان} \latscript{orman} `forest' \\
+		\arabscript{اُیون} \latscript{oyun} `game, entertainment, amusement'
+	\ex \label{ex:tobe} \arabscript{تٛرت} \latscript{tört} `four' \\
+		\arabscript{کٛل} \latscript{köl} `lake'
+\end{lingexample}
+
+These are often omitted.
+When they represent the sounds enumerated above at the end of a morpheme, a non-connecting \latscript{ha} must be written after it.
+
+\begin{lingexample}
+	\ex \arabscript{تِرلِەدیم} \latscript{ter-le-di-m} `I sweat' \\
+		\arabscript{سان فرانسیسکُەدا} \latscript{San Fransisko-da} `in San Francisco'
+\end{lingexample}
+
 \subsection{Other diacritics}
+
+Both of the following diacritics are never written above \latscript{älef}, and necessarily forces \latscript{waw}, \latscript{ha}, and \latscript{ye} to be read as consonants.
+
+\latscript{Sokun} \arabscript{سکون} is a circle-shaped diacritic written above a letter that marks the absence of a vowel at that position.
+
+\begin{lingexample}
+	\ex \arabscript{یولْدوزْ} \latscript{yulduz} `star'
+\end{lingexample}
+
+\latscript{Täşdid} \arabscript{تشدید} is a W-shaped diacritic written above a letter doubling it.
+It can be (and often is) used across morpheme boundaries
+
+\begin{lingexample}
+	\ex \arabscript{آقّان} \latscript{aqqan} past participle of \latscript{aq-} `flow' \\
+		\arabscript{الّی} \latscript{elli} `fifty'
+\end{lingexample}
 
 \chapter{Punctuation}

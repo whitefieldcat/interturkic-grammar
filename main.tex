@@ -10,8 +10,9 @@
 \usepackage{float}
 \usepackage{fontspec}
 \setmainfont[Ligatures=TeX]{Cambria}
-\newfontfamily{\arabicfont}[Script=Arabic, Scale=1.1]{Calibri}
+\newfontfamily{\arabicfont}[Script=Arabic, Scale=1.25]{Calibri}
 \usepackage[letterpaper, top=1.5in, bottom=1.5in, left=1.5in, right=1.25in]{geometry}
+\usepackage{multicol}
 
 % tables
 \usepackage{longtable}
@@ -102,7 +103,12 @@
 	\setlength{\parskip}{0pt} % minimise spacing between ToC and LoT entries
 	\tableofcontents
 	\listoftables
-	\printglosses[style=block]
+
+	\newpage % force pagebreak before list of abbreviations
+
+	\begin{multicols}{2}
+		\printglosses[style=block]
+	\end{multicols}
 
 	\mainmatter
 	\setlength{\parskip}{6pt} % set paragraph spacing for the rest of the document

@@ -4,7 +4,7 @@ This is a description of the grammar of Interturkic, a Turkic-based constructed 
 
 ## Required packages
 
-`bidi, caption, float, fontspec, gb4e, geometry, leipzig, longtable, multirow`
+`bidi, caption, float, fontspec, gb4e, geometry, leipzig, longtable, multicol, multirow`
 
 ## Compilation instructions
 
