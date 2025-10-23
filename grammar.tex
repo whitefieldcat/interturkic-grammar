@@ -73,6 +73,9 @@
 \glsfindwidesttoplevelname
 \makeglossaries
 
+\clubpenalty=10000
+\widowpenalty=10000
+
 % Transcriptions
 \newcommand{\foreign}[1]{\textit{#1}}
 \newcommand{\phonem}[1]{/\nolinebreak#1\nolinebreak/}
@@ -84,6 +87,7 @@
 \newcommand{\latntxt}[1]{{\latnfont#1}}
 
 % Miscellaneous punctuation
+\newcommand{\alternate}{\textasciitilde}
 \newcommand{\copiedfrom}{$\Leftarrow$}
 \newcommand{\derivedto}{$\rightarrow$}
 \newcommand{\zero}{$\emptyset$}
@@ -109,4 +113,7 @@
 
   \mainmatter
 
+  \part{Phonology}
+
+  \include{contents/phonology/phonemes}
 \end{document}
