@@ -1,0 +1,112 @@
+\documentclass[
+  a4paper,
+  twoside,
+]{book}
+
+\title{Interturkic Grammar}
+\author{whitefieldcat}
+\date{}
+
+% Font selection
+\usepackage{fontspec}
+\setmainfont{NotoSerif}
+\newfontfamily{\latnfont}{NotoSerif}[
+  HyphenChar=None,
+  Ligatures=CommonOff,
+]
+\newfontfamily{\arabfont}{NotoNaskhArabic}[
+  Renderer=HarfBuzz,
+  Script=Arabic,
+  Scale=1.125,
+]
+
+% Bidirection typesetting
+\usepackage{luabidi}
+
+% Microtypographical optimisations
+\usepackage[
+  expansion=true,
+  protrusion=true,
+]{microtype}
+
+% More precise hyphenation behaviour with dashes
+\usepackage[shortcuts]{extdash}
+
+% Formatting of examples and interlinear glosses
+\usepackage{expex}
+\lingset{
+  aboveglftskip=0pt,
+  everygla=\latnfont\it,
+  numoffset=\parindent,
+}
+
+% Mulirow cells in tables
+\usepackage{multirow}
+
+% Multipage tables
+\usepackage{longtable}
+
+% Caption customisation
+\usepackage[
+  font=bf,
+  skip=0pt,
+]{caption}
+
+% Fancy horizontal rules in tables
+\usepackage{booktabs}
+
+% Clickable references and PDF metadata
+% (must be loaded BEFORE leipzig [leipzig package documentation, p. 5])
+\usepackage[
+  hidelinks,
+  pdfdisplaydoctitle,
+  pdfusetitle,
+]{hyperref}
+
+% Glossing abbreviations
+% (must be loaded AFTER hyperref [leipzig package documentation, p. 5])
+\usepackage[
+  leipzighyper,
+  mcolblock,
+  toc,
+]{leipzig}
+\glsfindwidesttoplevelname
+\makeglossaries
+
+% Transcriptions
+\newcommand{\foreign}[1]{\textit{#1}}
+\newcommand{\phonem}[1]{/\nolinebreak#1\nolinebreak/}
+\newcommand{\phonet}[1]{[\nolinebreak#1\nolinebreak]}
+\newcommand{\transl}[1]{`#1'}
+
+% Interturkic-language text
+\newcommand{\arabtxt}[1]{\RL{\arabfont#1}}
+\newcommand{\latntxt}[1]{{\latnfont#1}}
+
+% Miscellaneous punctuation
+\newcommand{\copiedfrom}{$\Leftarrow$}
+\newcommand{\derivedto}{$\rightarrow$}
+\newcommand{\zero}{$\emptyset$}
+
+\begin{document}
+  \frontmatter
+
+  \maketitle
+  \thispagestyle{empty}
+  \cleardoublepage
+
+  \pdfbookmark{\contentsname}{toc}
+  \tableofcontents
+  \cleardoublepage
+
+  \phantomsection
+  \addcontentsline{toc}{chapter}{\listtablename}
+  \listoftables
+  \cleardoublepage
+
+  \printglossaries
+  \cleardoublepage
+
+  \mainmatter
+
+\end{document}
