@@ -1,1 +1,259 @@
 \chapter{Nouns}
+
+\section{Inflection}
+
+\subsection{Number}
+
+Interturkic nouns distinguish singular from plural morphologically.
+The plural is marked with the suffix \foreign{\latntxt{\=/lAr}}, though it is
+not added if plurality is already indicated by other means, such as numerals or
+adverbs of quantity; compare (\ref{ex:plural-lar-yes}) and
+(\ref{ex:plural-lar-no}).
+
+\pex
+  \a\label{ex:plural-lar-yes}
+    \vtop{\halign{
+      \foreign{\latntxt{#}}\hfil&\:\transl{#}\hfil&\:\derivedto~\foreign{\latntxt
+      {#}}\hfil\cr
+      köz&eye&közler\cr
+      kitab&book&kitablar\cr
+    }}
+  \a\label{ex:plural-lar-no}
+    \vtop{\halign{
+      \foreign{\latntxt{#}}\hfil&\:\transl{#}\hfil\cr
+      eki köz&two eyes\cr
+      tört kitab&four books\cr
+    }}
+\xe
+
+By contrast, the singular is marked by the absence of the plural suffix.
+In addition to denoting actual singularity, a noun in the singular can also have
+generic or ambiguous readings, as in (\ref{ex:generic-singular}).
+Singularity can be expressed more explicitly by adding the indefinite article
+\foreign{\latntxt{bir}} \transl{a(n)}, as in (\ref{ex:explicit-singular}).
+
+\pex
+  \a\label{ex:generic-singular}%
+    \begingl
+      \gla at\=/\zero{} kütmek//
+      \glb horse-\Sg{} {to herd}//
+      \glft\transl{to herd a horse} or \transl{to herd horses}//
+    \endgl
+  \a\label{ex:explicit-singular}%
+    \begingl
+      \gla Bir kitab\=/\zero{} oquyman.//
+      \glb one book-\Sg{} {I read}//
+      \glft\transl{I read a book.}//
+    \endgl
+\xe
+
+\subsection{Possession}
+\label{sec:possession}
+
+Possession of nouns is expressed by the suffixes in table~\ref{%
+tbl:posessive-suffixes}, which encode the person and number of the possessor.
+Note that the third\-/person suffix is the same for both singular and plural
+possessors.
+
+\begin{table}
+  \centering
+  \caption{Possessive suffixes}
+  \label{tbl:posessive-suffixes}
+  \begin{tabular}{llll}
+    \toprule
+    &\First&\Second&\Third\\
+    \midrule
+    \Sg&\latntxt{\=/(I)m}&\latntxt{\=/(I)ñ}
+    &\multirow[t]{2}{*}{\latntxt{\=/(s)I}}\\
+    \cmidrule(lr){2-3}
+    \Pl&\latntxt{\=/(I)m}&\latntxt{\=/(I)ñIz}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Case}
+
+Case describes a noun's role within a phrase and is encoded by the suffixes in
+table~\ref{tbl:case-suffixes}.
+Note that the nominative is encoded by the lack of a case suffix, and that
+certain case suffixes have different forms when preceded by possessive suffixes.
+
+\begin{table}
+  \centering
+  \caption{Case suffixes}
+  \label{tbl:case-suffixes}
+  \begin{tabular}{llll}
+    \toprule
+    &\multirow[t]{2}{*}{Default}&\multicolumn{2}{l}{Possessive}\\
+    \cmidrule(lr){3-4}
+    &&\First/\Second&\Third\\
+    \midrule
+    \Nom&\multicolumn{3}{l}{\latntxt{\=/\zero}}\\
+    \Acc&\multicolumn{2}{l|}{\latntxt{\=/nI}}&\latntxt{\=/n(I)}\\
+    \Gen&\multicolumn{3}{l}{\latntxt{\=/nIñ}}\\
+    \Dat&\latntxt{\=/GA}&\multicolumn{2}{|l}{\latntxt{\=/(n)A}}\\
+    \Loc&\latntxt{\=/DA}&\multicolumn{2}{|l}{\latntxt{\=/(n)dA}}\\
+    \Abl&\latntxt{\=/DAn}&\multicolumn{2}{|l}{\latntxt{\=/(n)dAn}}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+The nominative marks subjects~(\ref{ex:nom-subj}), vocatives~(\ref{ex:nom-voc}),
+copular complements~(\ref{ex:nom-cop-compl}), and indefinite direct objects~(%
+\ref{ex:nom-indef-dir-obj}).
+
+\pex
+  \a\label{ex:nom-subj}%
+    \begingl
+      \gla Ahmad\=/\zero{} kitab oquydu.//
+      \glb Ahmad\=/\Nom{} book reads//
+      \glft\transl{Ahmad reads a book.}//
+    \endgl
+  \a\label{ex:nom-voc}%
+    \begingl
+      \gla Ey watandaşlar\=/\zero{}, qaydasız?//
+      \glb \Voc{} compatriot.\Pl\=/\Nom{}, where.\Cop.\Spl{}//
+      \glft\transl{O compatriots, where are you?}//
+    \endgl
+  \a\label{ex:nom-cop-compl}%
+    \begingl
+      \gla Sen Iranlı\=/\zero\=/san.//
+      \glb \Ssg{} Iranian\=/\Nom\=/\Cop.\Ssg{}//
+      \glft\transl{You're Iranian.}//
+    \endgl
+  \a\label{ex:nom-indef-dir-obj}%
+    \begingl
+      \gla Çatır\=/\zero{} al!//
+      \glb umbrella\=/\Nom{} take//
+      \glft\transl{Take an umbrella!}//
+    \endgl
+\xe
+
+The accusative marks direct objects if and only if they are considered to be
+definite (see \ref{sec:definiteness}).
+
+\ex
+  \begingl
+    \gla Kitab\=/ı\=/n oqu\=/ma\=/dı\=/ñ\=/mı?//
+    \glb book\=/\Poss.\Third\=/\Acc{} read\=/\Neg\=/\Pst\=/\Ssg\=/\Q//
+    \glft\transl{Haven't you read his book?}//
+  \endgl
+\xe
+
+The genitive marks possessors~(\ref{ex:gen-poss}) and the complements of certain
+postpositions~(\ref{ex:gen-compl}).
+The usage in (\ref{ex:gen-poss}) mirrored by the possessive suffixes added to
+the possessum (see \ref{sec:possession}).
+
+\pex
+  \a\label{ex:gen-poss}%
+    \begingl
+      \gla meniñ yüzüg\=/üm//
+      \glb \Fsg.\Gen{} ring\=/\Poss.\Fsg{}//
+      \glft\transl{my ring}//
+    \endgl
+  \a\label{ex:gen-compl}%
+    \begingl
+      \gla üy\=/nüñ iç\=/i\=/nde//
+      \glb house\=/\Gen{} interior\=/\Poss.\Third\=/\Loc//
+      \glft\transl{inside the house}//
+    \endgl
+\xe
+
+The dative marks indirect objects~(\ref{ex:dat-indir-obj}), places towards which
+an action is directed~(\ref{ex:dat-dest}), the complements of certain
+postpositions~(\ref{ex:dat-post-compl}), and the complements of certain verbs~%
+(\ref{ex:dat-verb-compl}).
+
+\pex
+  \a\label{ex:dat-indir-obj}%
+    \begingl
+      \gla Oña suw berdim.//
+      \glb \Tsg.\Dat{} water {I gave}//
+      \glft\transl{I gave him water.}//
+    \endgl
+  \a\label{ex:dat-dest}%
+    \begingl
+      \gla Yapraq yer\=/ge tüştü.//
+      \glb leaf ground\=/\Dat{} fell//
+      \glft\transl{The leaf fell to the ground.}//
+    \endgl
+  \a\label{ex:dat-post-compl}%
+    \begingl
+      \gla yel\=/ge qarşı//
+      \glb wind\=/\Dat{} against//
+      \glft\transl{against the wind}//
+    \endgl
+  \a\label{ex:dat-verb-compl}%
+    \begingl
+      \gla Maña bağıñız.//
+      \glb \Fsg.\Dat{} look//
+      \glft\transl{Look at me.}//
+    \endgl
+\xe
+
+The locative expresses location within some space, whether that be a physical~%
+(\ref{ex:loc-phys}), temporal~(\ref{ex:loc-time}), or some abstract concept~(%
+\ref{ex:loc-abstr}).
+
+\pex
+  \a\label{ex:loc-phys}%
+    \begingl
+      \gla Xacıtarxan\=/da yaşaylar.//
+      \glb Astrakhan\=/\Loc{} {they live}//
+      \glft\transl{They live in Astrakhan.}//
+    \endgl
+  \a\label{ex:loc-time}%
+    \begingl
+      \gla Hüseyn sağat beş\=/te keldi.//
+      \glb Husayn hour five\=/\Loc{} left//
+      \glft\transl{Husayn left at five o'clock.}//
+    \endgl
+  \a\label{ex:loc-abstr}%
+    \begingl
+      \gla Tınçlıq\=/ta edik.//
+      \glb peace\=/\Loc{} {we were}//
+      \glft\transl{We were in [a time of] peace.}//
+    \endgl
+\xe
+
+The ablative marks points of departure~(\ref{ex:abl-origin}) and places
+`through' which an action is performed~(\ref{ex:abl-through}), as well the
+complements of certain verbs~(\ref{ex:abl-verb-compl}) and postpositions~(\ref{%
+ex:abl-post-compl}).
+
+\pex
+  \a\label{ex:abl-origin}%
+    \begingl
+      \gla Tawlar\=/dan keldiler.//
+      \glb mountain.\Pl\=/\Abl{} {they came}//
+      \glft\transl{They came from the mountains.}//
+    \endgl
+  \a\label{ex:abl-through}%
+    \begingl
+      \gla Ağaçnı pencere\=/den kördüm.//
+      \glb tree.\Acc{} window\=/\Abl{} {I saw}//
+      \glft\transl{I saw the tree through the window.}//
+    \endgl
+  \a\label{ex:abl-verb-compl}%
+    \begingl
+      \gla Ondan qorqma.//
+      \glb \Tsg.\Abl{} {be not afraid}//
+      \glft\transl{Don't be afraid of it.}//
+    \endgl
+  \a\label{ex:abl-post-compl}%
+    \begingl
+      \gla ders\=/ten soñ//
+      \glb lession\=/\Abl{} after//
+      \glft\transl{after the lesson}//
+    \endgl
+\xe
+
+\subsection{Definiteness}
+\label{sec:definiteness}
+
+Unlike the other grammatical categories, definiteness is not encoded directly on
+a noun.
+Rather, a noun's context may confer definiteness upon it.
+Nouns are considered definite when they are possessed, proper, or qualified by
+a demonstrative.
