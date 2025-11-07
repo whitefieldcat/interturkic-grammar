@@ -62,6 +62,8 @@
 
 % Glossing abbreviations. Must be loaded after hyperref.
 \usepackage[leipzighyper,mcolblock,toc]{leipzig}
+\newleipzig{denom}{denom}{denominal}
+\newleipzig{ord}{ord}{ordinal}
 \glsfindwidesttoplevelname
 \makeglossaries
 
@@ -129,6 +131,7 @@
   \endgl}
 
 % Other punctuation.
+\newcommand{\alternateswith}{\~{}}
 \newcommand{\copiedas}{\textup{\symbfont ⇒}}
 \newcommand{\copiedfrom}{\textup{\symbfont ⇐}}
 \newcommand{\derivedas}{\textup{\symbfont →}}
@@ -147,7 +150,12 @@
 
   \part{Phonology}
 
-  \part{Orthograpy}
+  \include{contents/phonology/phonemes}
+  \include{contents/phonology/allophony}
+  \include{contents/phonology/syllables}
+  \include{contents/phonology/morphophonology}
+
+  \part{Orthography}
 
   \part{Morphology}
 
