@@ -62,8 +62,6 @@
 
 % Glossing abbreviations. Must be loaded after hyperref.
 \usepackage[leipzighyper,mcolblock,toc]{leipzig}
-\newleipzig{denom}{denom}{denominal}
-\newleipzig{ord}{ord}{ordinal}
 \glsfindwidesttoplevelname
 \makeglossaries
 
@@ -110,34 +108,6 @@
     \tableofcontents
   \end{KeepFromToc}}
 
-% Transcriptions.
-\newcommand{\foreign}[1]{\emph{#1}}
-\newcommand{\morphophon}[1]{\{\nolinebreak#1\nolinebreak\}}
-\newcommand{\phonem}[1]{/\nolinebreak#1\nolinebreak/}
-\newcommand{\phonet}[1]{[\nolinebreak#1\nolinebreak]}
-\newcommand{\transl}[1]{`#1'}
-
-% Interturkic-language text.
-\newcommand{\arabtxt}[1]{\RL{\arabfont#1}}
-\newcommand{\latntxt}[1]{{\latnfont#1}}
-
-% Glossing.
-\newcommand{\inlinegls}[1]{{\symbfont ⟨}\nolinebreak#1\nolinebreak{\symbfont ⟩}}
-\newcommand{\interlinegls}[3]{%
-  \begingl
-    \gla#1//
-    \glb#2//
-    \glft#3//
-  \endgl}
-
-% Other punctuation.
-\newcommand{\alternateswith}{\~{}}
-\newcommand{\copiedas}{\textup{\symbfont ⇒}}
-\newcommand{\copiedfrom}{\textup{\symbfont ⇐}}
-\newcommand{\derivedas}{\textup{\symbfont →}}
-\newcommand{\derivedfrom}{\textup{\symbfont ←}}
-\newcommand{\zero}{Ø}
-
 \begin{document}
   \makehalftitle
   \makefulltitle
@@ -150,27 +120,11 @@
 
   \part{Phonology}
 
-  \include{contents/phonology/phonemes}
-  \include{contents/phonology/allophony}
-  \include{contents/phonology/syllables}
-  \include{contents/phonology/morphophonology}
-
   \part{Orthography}
-
-  \include{contents/orthography/latin}
-  \include{contents/orthography/arabic}
 
   \part{Morphology}
 
-  \include{contents/morphology/nouns}
-  \include{contents/morphology/verbs}
-
-
   \part{Syntax}
-
-  \appendix
-
-  \part{Sample texts}
 
   \backmatter
 
