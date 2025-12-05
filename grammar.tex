@@ -62,6 +62,8 @@
 
 % Glossing abbreviations. Must be loaded after hyperref.
 \usepackage[leipzighyper,mcolblock,toc]{leipzig}
+\newleipzig{intra}{intra}{intraterminal}
+\newleipzig{post}{post}{postterminal}
 \glsfindwidesttoplevelname
 \makeglossaries
 
@@ -115,6 +117,7 @@
 \newcommand{\latntxt}[1]{{\latnfont#1}}
 
 \newcommand{\derivedas}{\textup{\symbfont →}}
+\newcommand{\zero}{Ø}
 
 \begin{document}
   \makehalftitle
