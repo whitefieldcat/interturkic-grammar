@@ -63,6 +63,8 @@
 % Glossing abbreviations. Must be loaded after hyperref.
 \usepackage[leipzighyper,mcolblock,toc]{leipzig}
 \newleipzig{intra}{intra}{intraterminal}
+\newleipzig{hfoc}{hfoc}{high\-/focal}
+\newleipzig{lfoc}{lfoc}{low\-/focal}
 \newleipzig{post}{post}{postterminal}
 \glsfindwidesttoplevelname
 \makeglossaries
@@ -111,12 +113,14 @@
   \end{KeepFromToc}}
 
 \newcommand{\foreign}[1]{\emph{#1}}
+\newcommand{\inlinegls}[1]{{\symbfont ⟨}\nolinebreak#1\nolinebreak{\symbfont ⟩}}
 \newcommand{\morphophon}[1]{\textup{\{}\nolinebreak#1\nolinebreak\textup{\}}}
 \newcommand{\transl}[1]{`#1'}
 
 \newcommand{\latntxt}[1]{{\latnfont#1}}
 
 \newcommand{\derivedas}{\textup{\symbfont →}}
+\newcommand{\derivedfrom}{\textup{\symbfont ←}}
 \newcommand{\zero}{Ø}
 
 \begin{document}
