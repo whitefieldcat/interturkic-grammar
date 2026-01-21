@@ -2,7 +2,7 @@
 
 \title{Interturkic Grammar}
 \author{whitefieldcat}
-\date{2026-01-19}
+\date{2026-01-21}
 
 % Set margins proportional to paper size.
 \setlrmarginsandblock{0.125\paperwidth}{0.25\paperwidth}{*}
@@ -62,6 +62,7 @@
 
 % Glossing abbreviations. Must be loaded after hyperref.
 \usepackage[leipzighyper,mcolblock,toc]{leipzig}
+\newleipzig{denom}{denom}{denominal}
 \glsfindwidesttoplevelname
 \makeglossaries
 
@@ -109,6 +110,9 @@
   \end{KeepFromToc}}
 
 \newcommand{\arabtxt}[1]{\RL{\arabfont#1}}
+\newcommand{\copiedfrom}{\textup{\symbfont⇐}}
+\newcommand{\derivesfrom}{\textup{\symbfont←}}
+\newcommand{\derivesto}{\textup{\symbfont→}}
 \newcommand{\foreign}[1]{\emph{#1}}
 \newcommand{\inlinegls}[1]{\textup{\symbfont⟨}\nolinebreak#1\nolinebreak\textup
   {\symbfont⟩}}
@@ -116,6 +120,8 @@
 \newcommand{\morphophon}[1]{\textup{\{}\nolinebreak#1\nolinebreak\textup{\}}}
 \newcommand{\phonem}[1]{\textup{/}\nolinebreak#1\nolinebreak\textup{/}}
 \newcommand{\phonet}[1]{\textup{[}\nolinebreak#1\nolinebreak\textup{]}}
+\newcommand{\transl}[1]{`#1'}
+\newcommand{\zero}{\textup{\symbfont∅}}
 
 \begin{document}
   \makehalftitle
