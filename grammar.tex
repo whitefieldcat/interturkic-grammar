@@ -1,0 +1,141 @@
+\documentclass[a4paper,oldfontcommands]{memoir}
+
+\title{Interturkic Grammar}
+\author{whitefieldcat}
+\date{TBA}
+
+% Set margins proportional to paper size.
+\setlrmarginsandblock{0.125\paperwidth}{0.25\paperwidth}{*}
+\setulmarginsandblock{0.125\paperheight}{0.25\paperheight}{*}
+\checkandfixthelayout
+
+% Disable uppercasing of chapter/section names in page headers.
+\nouppercaseheads
+
+% Number and include headings.
+\setsecnumdepth{all}
+\settocdepth{all}
+
+% Font selection.
+\usepackage{fontspec}
+\setmainfont{NotoSerif}
+\newfontfamily{\symbfont}{NotoSansMath}
+\newfontfamily{\latnfont}{NotoSerif}[HyphenChar=None,Ligatures=CommonOff]
+\newfontfamily{\arabfont}{NotoNaskhArabic}[Renderer=HarfBuzz,Script=Arabic]
+
+% Bidirectional typesetting.
+\usepackage{luabidi}
+
+% Microtypographical refinements.
+\usepackage{microtype}
+
+% Fine-grained hyphenation at dashes.
+\usepackage[shortcuts]{extdash}
+
+% Formatting of examples and interlinear glosses
+\usepackage{expex}
+\lingset{aboveglftskip=0pt,everygla=\latnfont\it,numoffset=\parindent}
+
+% Multipage tables.
+\usepackage{longtable}
+
+% Mulirow cells in tables.
+\usepackage{multirow}
+
+% Smart references to labels. Must be loaded before hyperref.
+\usepackage[nospace]{varioref}
+
+% Hyperlinks and PDF metadata. Should be among the last packages loaded.
+\usepackage[hidelinks,hypertexnames=false,pdfdisplaydoctitle,pdfusetitle]
+  {hyperref}
+\pdfstringdefDisableCommands{\def\-/{-}}
+
+% PDF bookmark management. Must be loaded after hyperref.
+\usepackage{bookmark}
+% Redefine \backmatter to cleanly separate back-matter content from previous
+% \part commands.
+\NewCommandCopy{\defaultbackmatter}{\backmatter}
+\renewcommand{\backmatter}{%
+  \bookmarksetup{startatroot}
+  \addtocontents{toc}{\bigskip}
+  \defaultbackmatter}
+
+% Glossing abbreviations. Must be loaded after hyperref.
+\usepackage[leipzighyper,mcolblock,toc]{leipzig}
+\newleipzig{denom}{denom}{denominal}
+\glsfindwidesttoplevelname
+\makeglossaries
+
+% Forbid widow/orphan lines.
+\clubpenalty=10000
+\widowpenalty=10000
+
+% Titling pages.
+\newcommand{\makefulltitle}{%
+  \cleartorecto
+  \begin{titlingpage*}
+    \begin{center}
+      \vspace*{\fill}
+      {\HUGE\thetitle}\par
+      \vspace*{\fill}
+      \theauthor\par
+      \thedate\par
+    \end{center}
+  \end{titlingpage*}}
+\newcommand{\makehalftitle}{%
+  \cleartorecto
+  \begin{titlingpage*}
+    \begin{center}
+      \vspace*{\fill}
+      {\HUGE\thetitle}\par
+      \vspace*{\fill}
+    \end{center}
+  \end{titlingpage*}}
+
+% Content listings.
+\renewcommand{\leipzigname}{List of abbreviations}
+\newcommand{\makeloa}{%
+  \cleartorecto
+  \printglossaries}
+\renewcommand{\listtablename}{List of tables}
+\newcommand{\makelot}{%
+  \cleartorecto
+  \listoftables}
+\renewcommand{\contentsname}{Table of contents}
+\newcommand{\maketoc}{%
+  \cleartorecto
+  \pdfbookmark{\contentsname}{toc}
+  \begin{KeepFromToc}
+    \tableofcontents
+  \end{KeepFromToc}}
+
+\newcommand{\altwith}{\~{}}
+\newcommand{\arabtxt}[1]{\RL{\arabfont#1}}
+\newcommand{\copiedfrom}{\textup{\symbfont⇐}}
+\newcommand{\derivesfrom}{\textup{\symbfont←}}
+\newcommand{\derivesto}{\textup{\symbfont→}}
+\newcommand{\foreign}[1]{\emph{#1}}
+\newcommand{\inlinegls}[1]{\textup{\symbfont⟨}\nolinebreak#1\nolinebreak\textup
+  {\symbfont⟩}}
+\newcommand{\latntxt}[1]{{\latnfont#1}}
+\newcommand{\morphophon}[1]{\textup{\{}\nolinebreak#1\nolinebreak\textup{\}}}
+\newcommand{\phonem}[1]{\textup{/}\nolinebreak#1\nolinebreak\textup{/}}
+\newcommand{\phonet}[1]{\textup{[}\nolinebreak#1\nolinebreak\textup{]}}
+\newcommand{\transl}[1]{`#1'}
+\newcommand{\zero}{\textup{\symbfont∅}}
+
+\begin{document}
+  \makehalftitle
+  \makefulltitle
+
+  \frontmatter
+
+  \maketoc
+
+  \mainmatter
+
+  \backmatter
+
+  \makeloa
+  \makelot
+\end{document}
